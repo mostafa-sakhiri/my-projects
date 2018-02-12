@@ -1,0 +1,69 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Open Sans';
+}
+
+#add-task input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #eee;
+  font-size: 15px;
+  color: #222;
+}
+
+#add-task button {
+  background: #9b59b6;
+  color: white;
+  border:1px solid #9b59b6;
+  padding: 10px;
+  font-size: 15px;
+  width: 20%;
+  cursor: pointer;
+}
+
+#add-task button:hover {
+  background: #8e44ad;
+  border-color: #8e44ad;
+}
+
+#todo-app h1 {
+    text-align: center;
+    color: #9b59b6;
+    margin: 50px 0;
+}
+
+#todo-app > div {
+    width: 60%;
+    margin: 0 auto 1px;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: white;
+    cursor: pointer;
+    transition-property: width;
+    transition-duration: 3s;
+}
+
+#todo-app .task i{
+  float: right;
+  padding: 3px 0;
+  color: #bdc3c7;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#todo-app .task i:hover {
+  color:#9b59b6;
+}
+
+#todo-app .task-done {
+  text-decoration: line-through;
+}
+
+#todo-app .remove-task-transition {
+  transition: all .3s ease;
+}
