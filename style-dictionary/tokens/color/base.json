@@ -4,12 +4,10 @@
       "red": {
         "regular": {
           "value": "#FFE5EE",
-          "name": "red",
           "type": "color"
         },
         "dark": {
-          "value": "#B5002D",
-          "name": "dark-red",
+          "value": "#f30031",
           "type": "color"
         }
       },
@@ -22,5 +20,11 @@
         "type": "color"
       }
     }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "color"
+    ]
   }
 }
