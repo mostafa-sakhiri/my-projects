@@ -19,6 +19,88 @@
         "value": "#000000",
         "type": "color"
       }
+    },
+    "sizing": {
+      "base": {
+        "size1": {
+          "value": "3.5px",
+          "type": "sizing"
+        },
+        "size2": {
+          "value": "7px",
+          "type": "sizing"
+        },
+        "size3": {
+          "value": "14px",
+          "type": "sizing"
+        },
+        "size4": {
+          "value": "28px",
+          "type": "sizing"
+        }
+      }
+    },
+    "spacing": {
+      "base": {
+        "spacing1": {
+          "value": "3.5px",
+          "type": "spacing"
+        },
+        "spacing2": {
+          "value": "7px",
+          "type": "spacing"
+        },
+        "spacing3": {
+          "value": "14px",
+          "type": "spacing"
+        },
+        "spacing4": {
+          "value": "28px",
+          "type": "spacing"
+        }
+      },
+      "button": {
+        "small": {
+          "value": "{spacing.base.spacing1} {spacing.base.spacing2}",
+          "type": "spacing"
+        },
+        "medium": {
+          "value": "{spacing.base.spacing2} {spacing.base.spacing3}",
+          "type": "spacing"
+        }
+      }
+    },
+    "font": {
+      "size": {
+        "size1": {
+          "value": "42px",
+          "type": "fontSizes"
+        },
+        "size2": {
+          "value": "31.5px",
+          "type": "fontSizes"
+        },
+        "size3": {
+          "value": "21px",
+          "type": "fontSizes"
+        }
+      }
+    },
+    "border": {
+      "radius": {
+        "50": {
+          "value": "50%",
+          "type": "borderRadius"
+        },
+        "radius1": {
+          "value": "1px",
+          "type": "borderRadius"
+        },
+        "radius3": {
+          "value": "3px",
+          "type": "borderRadius"
+        }
+      }
     }
   },
   "$themes": [],
