@@ -7,7 +7,7 @@
           "type": "color"
         },
         "dark": {
-          "value": "#f30031",
+          "value": "#B5002D",
           "type": "color"
         }
       },
@@ -65,7 +65,7 @@
           "type": "spacing"
         },
         "medium": {
-          "value": "{spacing.base.spacing2} {spacing.base.spacing3}",
+          "value": "{spacing.base.spacing2} {spacing.base.spacing4}",
           "type": "spacing"
         }
       }
@@ -93,7 +93,7 @@
           "type": "borderRadius"
         },
         "radius1": {
-          "value": "1px",
+          "value": "2px",
           "type": "borderRadius"
         },
         "radius3": {
