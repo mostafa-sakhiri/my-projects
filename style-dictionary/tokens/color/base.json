@@ -6,7 +6,7 @@
         "type": "color"
       },
       "darkRed": {
-        "value": "#B5002D",
+        "value": "#e7040f",
         "type": "color"
       },
       "white": {
@@ -21,6 +21,8 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": ["color"]
+    "tokenSetOrder": [
+      "color"
+    ]
   }
 }
