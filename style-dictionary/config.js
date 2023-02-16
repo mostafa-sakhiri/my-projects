@@ -14,23 +14,28 @@ const StyleDictionary = require("style-dictionary");
 StyleDictionary.registerFormat({
   name: `color/tachyons`,
   formatter: function ({ dictionary }) {
+    function camelToUnderscore(key) {
+      var result = key.replace(/([A-Z])/g, " $1");
+      return result.split(" ").join("-").toLowerCase();
+    }
     return dictionary.allTokens
       .filter(({ type }) => type === "color")
       .map((token) => {
-        let value = JSON.stringify(token.value);
+        let value = token.value;
         if (dictionary.usesReference(token.original.value)) {
           const refs = dictionary.getReferences(token.original.value);
           refs.forEach((ref) => {
             value = value.replace(ref.value, function () {
-              return `${ref.name}`;
+              return ref.name;
             });
           });
         }
+        const name = camelToUnderscore(token.name);
         return [
-          `$${token.name}: ${value};\n`,
-          `.${token.name} { color: $${token.name}; }\n`,
-          `.b--${token.name} { border-color: $${token.name}; }\n`,
-          `.bg--${token.name} { background-color: $${token.name}; }\n`,
+          `$${name}: ${value};\n`,
+          `.${name} { color: $${name}; }\n`,
+          `.b--${name} { border-color: $${name}; }\n`,
+          `.bg-${name} { background-color: $${name}; }\n`,
           "\n",
         ];
       })
@@ -47,8 +52,11 @@ module.exports = {
       const { allTokens } = dictionary;
       const colorTokens = allTokens
         .filter(({ type }) => type === "color")
-        .map(({ name, value }) => ({ name, color: value }));
-      return JSON.stringify([{ colors: colorTokens }]);
+        .reduce((acc, { name, value }) => {
+          acc[name] = value;
+          return acc;
+        }, {});
+      return JSON.stringify(colorTokens);
     },
   },
   platforms: {

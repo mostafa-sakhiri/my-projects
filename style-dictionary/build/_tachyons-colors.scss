@@ -1,20 +1,20 @@
-$regular: "#FFE5EE";
-.regular { color: $regular; }
-.b--regular { border-color: $regular; }
-.bg--regular { background-color: $regular; }
+$red: #FFE5EE;
+.red { color: $red; }
+.b--red { border-color: $red; }
+.bg-red { background-color: $red; }
 
-$dark: "#f30031";
-.dark { color: $dark; }
-.b--dark { border-color: $dark; }
-.bg--dark { background-color: $dark; }
+$dark-red: #B5002D;
+.dark-red { color: $dark-red; }
+.b--dark-red { border-color: $dark-red; }
+.bg-dark-red { background-color: $dark-red; }
 
-$white: "#FFFFFF";
+$white: #FFFFFF;
 .white { color: $white; }
 .b--white { border-color: $white; }
-.bg--white { background-color: $white; }
+.bg-white { background-color: $white; }
 
-$black: "#000000";
+$black: #000000;
 .black { color: $black; }
 .b--black { border-color: $black; }
-.bg--black { background-color: $black; }
+.bg-black { background-color: $black; }
 
