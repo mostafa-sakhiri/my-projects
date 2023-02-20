@@ -2,11 +2,11 @@
   "color": {
     "base": {
       "red": {
-        "value": "#FFE5EE",
+        "value": "#B5002D",
         "type": "color"
       },
       "darkRed": {
-        "value": "#e7040f",
+        "value": "#E4EBFF",
         "type": "color",
         "description": "change dark red color"
       },
