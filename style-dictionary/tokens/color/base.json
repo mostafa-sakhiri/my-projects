@@ -6,8 +6,9 @@
         "type": "color"
       },
       "darkRed": {
-        "value": "#B5002D",
-        "type": "color"
+        "value": "#e7040f",
+        "type": "color",
+        "description": "change dark red color"
       },
       "white": {
         "value": "#FFFFFF",
